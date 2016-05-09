@@ -3,8 +3,21 @@ public class ANN_Test {
 
 	public static void main(String[] args) {
 
-		double[][] X = { {3.0/10, 5.0/5}, 
-				 {5.0/10, 1.0/5}, 
+/*      Our input data is:
+ *      X1   X2   y
+ *      3    5    75
+ *      5    1    82
+ *      10   2    93
+ * 
+ *      According to above data corresponding formula is a*X1 + b*X2 = y
+ *      where we should find the best coefficients a and b to get the most accurate y's.
+ *
+ *      We should remember that inputs should be scaled before we feed them to Neural Nets
+ *      Each X should be divided by it's max value. In X1 column the max value is 10 and in X2 column is 5.
+ *      So X1 values are divided by 10 and X2 values are  divided by 5, and y values divided 100.
+ */
+		double[][] X = { {3.0/10,  5.0/5}, 
+				 {5.0/10,  1.0/5}, 
 				 {10.0/10, 2.0/5} };
 		double[] y = {0.75, 0.82, 0.93}; 
 
