@@ -4,8 +4,8 @@ public class ANN_Test {
 	public static void main(String[] args) {
 
 		double[][] X = { {3.0/10, 5.0/5}, 
-						 {5.0/10, 1.0/5}, 
-						 {10.0/10, 2.0/5} };
+				 {5.0/10, 1.0/5}, 
+				 {10.0/10, 2.0/5} };
 		double[] y = {0.75, 0.82, 0.93}; 
 
 		
